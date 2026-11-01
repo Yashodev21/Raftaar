@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rent Tata Ace Gold Mini Truck with Raftaar. Compact intra-city cargo and delivery vehicle hire across India at ₹1,899/day in INR.">
+  <title>Tata Ace Gold Mini Truck Hire | Raftaar Fleet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main class="section-wrap details-page-wrap">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Commercial Trucks</a>
+      <span>/</span>
+      <span class="current">Tata Ace Gold Mini Truck</span>
+    </nav>
+
+    <div class="details-grid">
+      <section class="details-showcase">
+        <div class="details-main-image">
+          <span class="vehicle-tag">MINI TRUCK · CITY CARGO</span>
+          <img src="./assets/Tata Ace.png" alt="Tata Ace Mini Truck">
+        </div>
+
+        <div class="details-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-icon">📦</span>
+            <span class="spec-box-label">Payload</span>
+            <span class="spec-box-val">750 kg Rated</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⚡</span>
+            <span class="spec-box-label">Engine</span>
+            <span class="spec-box-val">2-Cyl 700cc DI</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⛽</span>
+            <span class="spec-box-label">Mileage</span>
+            <span class="spec-box-val">22 km/l Diesel</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">🏙️</span>
+            <span class="spec-box-label">Permit</span>
+            <span class="spec-box-val">Day & Night Entry</span>
+          </div>
+        </div>
+
+        <div class="vehicle-desc-section">
+          <h3>Vehicle Overview</h3>
+          <p>
+            India's legendary 'Chhota Hathi'. The Tata Ace Gold is the undisputed champion of last-mile logistics, 
+            e-commerce dispatch, household shifting, and intra-city cargo. Its compact turning radius and flat 
+            cargo bed allow easy navigation through narrow markets and dense urban neighborhoods.
+          </p>
+
+          <h3>Hire Inclusions & Guarantee</h3>
+          <div class="inclusions-list">
+            <div class="inclusion-item">Intra-City Delivery Entry Certified</div>
+            <div class="inclusion-item">Zero Security Deposit Option</div>
+            <div class="inclusion-item">150 Free Kilometers per Day</div>
+            <div class="inclusion-item">Heavy-Duty Cargo Weather Tarpaulin Provided</div>
+            <div class="inclusion-item">24/7 Rapid Mechanical Support</div>
+            <div class="inclusion-item">Driver Option or Self-Drive Available</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="booking-sidebar-card" id="book">
+        <div class="pricing-header">
+          <div>
+            <span class="badge-tag-inr">LIVE PRICING · INR (₹)</span>
+            <div class="main-rate">₹1,899 <span>/ day</span></div>
+          </div>
+          <span class="vehicle-badge-avail">Available</span>
+        </div>
+
+        <div class="rate-plans-grid">
+          <div class="rate-plan-option selected" data-plan-days="1">
+            <div class="plan-label">Daily Shift</div>
+            <div class="plan-price">₹1,899 / day</div>
+          </div>
+          <div class="rate-plan-option" data-plan-days="3">
+            <div class="plan-label">3-Day Logistics</div>
+            <div class="plan-price">₹5,199 / 3 days</div>
+          </div>
+        </div>
+
+        <form class="booking-calc-form" id="rental-calc-form" data-daily-rate="1899">
+          <div class="calc-group">
+            <label for="pickup-city">Pickup City Hub</label>
+            <select id="pickup-city" name="city">
+              <option value="delhi">Delhi Okhla Industrial Hub</option>
+              <option value="mumbai">Mumbai Bhiwandi Logistics Hub</option>
+              <option value="bengaluru">Bengaluru Peenya Industrial Area</option>
+              <option value="hyderabad">Hyderabad Sanath Nagar Hub</option>
+              <option value="pune">Pune Bhosari MIDC</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label for="pickup-date">Pickup Date & Time</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+          </div>
+
+          <div class="calc-group">
+            <label for="rental-days">Rental Duration (Days)</label>
+            <input type="number" id="rental-days" name="days" value="1" min="1" max="30">
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="breakdown-row">
+              <span>Base Vehicle Rate</span>
+              <span id="calc-subtotal">₹1,899</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Goods & Services Tax (GST 18%)</span>
+              <span id="calc-gst">₹342</span>
+            </div>
+            <div class="breakdown-row total-row">
+              <span>Total Payable</span>
+              <span class="total-inr" id="calc-total">₹2,241</span>
+            </div>
+          </div>
+
+          <a class="btn-proceed-booking" href="booking-confirm.html?vehicle=ace&name=Tata%20Ace%20Gold&rate=1899&category=Mini%20Truck">
+            Reserve & Confirm Hire <span>→</span>
+          </a>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="index.html" class="back-top">BACK TO FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+  <script>
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(9, 0, 0, 0);
+    const dateInput = document.getElementById('pickup-date');
+    if (dateInput) dateInput.value = tomorrow.toISOString().slice(0, 16);
+  </script>
+</body>
+</html>

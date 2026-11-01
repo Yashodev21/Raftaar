@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commercial lease & rental of Tata Prima 4928.S heavy hauler truck with Raftaar. 40-ton tractor trailer at ₹11,999/day in INR.">
+  <title>Tata Prima 4928.S Heavy Truck Lease | Raftaar Fleet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main class="section-wrap details-page-wrap">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Commercial Trucks</a>
+      <span>/</span>
+      <span class="current">Tata Prima 4928.S Heavy Hauler</span>
+    </nav>
+
+    <div class="details-grid">
+      <section class="details-showcase">
+        <div class="details-main-image">
+          <span class="vehicle-tag">TRUCK · HEAVY COMMERCIAL TRACTOR</span>
+          <img src="./assets/Tata Prima Truck.png" alt="Tata Prima Heavy Truck">
+        </div>
+
+        <div class="details-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-icon">⚖️</span>
+            <span class="spec-box-label">Gross Capacity</span>
+            <span class="spec-box-val">40,000 kg GVW</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⚡</span>
+            <span class="spec-box-label">Engine</span>
+            <span class="spec-box-val">Cummins ISBe 280 HP</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">🛏️</span>
+            <span class="spec-box-label">Cabin</span>
+            <span class="spec-box-val">Air-Conditioned Sleeper</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">📜</span>
+            <span class="spec-box-label">Permit</span>
+            <span class="spec-box-val">National All-India</span>
+          </div>
+        </div>
+
+        <div class="vehicle-desc-section">
+          <h3>Vehicle Overview</h3>
+          <p>
+            World-class heavy logistics powerhouse. The Tata Prima 4928.S is built for non-stop interstate haulage, 
+            container cargo, and industrial machinery. Features an ergonomically suspended AC sleeper cab, 
+            telematics GPS live fleet tracking, ABS pneumatic braking, and high fuel economy on national freight corridors.
+          </p>
+
+          <h3>Commercial Lease Inclusions</h3>
+          <div class="inclusions-list">
+            <div class="inclusion-item">All-India National Cargo Permit</div>
+            <div class="inclusion-item">Commercial Freight Transit Insurance</div>
+            <div class="inclusion-item">Fleet Telematics & GPS Live Portal</div>
+            <div class="inclusion-item">24/7 National Highway Breakdown Network</div>
+            <div class="inclusion-item">Commercial Fastag Billing Automated</div>
+            <div class="inclusion-item">Dedicated Commercial Account Manager</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="booking-sidebar-card" id="book">
+        <div class="pricing-header">
+          <div>
+            <span class="badge-tag-inr">LIVE PRICING · INR (₹)</span>
+            <div class="main-rate">₹11,999 <span>/ day</span></div>
+          </div>
+          <span class="vehicle-badge-avail">Commercial Lease</span>
+        </div>
+
+        <div class="rate-plans-grid">
+          <div class="rate-plan-option selected" data-plan-days="1">
+            <div class="plan-label">Daily Commercial</div>
+            <div class="plan-price">₹11,999 / day</div>
+          </div>
+          <div class="rate-plan-option" data-plan-days="7">
+            <div class="plan-label">Weekly Corridor</div>
+            <div class="plan-price">₹74,999 / 7 days</div>
+          </div>
+        </div>
+
+        <form class="booking-calc-form" id="rental-calc-form" data-daily-rate="11999">
+          <div class="calc-group">
+            <label for="pickup-city">Freight Terminal Hub</label>
+            <select id="pickup-city" name="city">
+              <option value="delhi">Delhi Sanjay Gandhi Transport Nagar</option>
+              <option value="mumbai">JNPT Port Terminal Hub</option>
+              <option value="chennai">Chennai Port Logistics Hub</option>
+              <option value="kolkata">Kolkata Dankuni Freight Hub</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label for="pickup-date">Dispatch Date & Time</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+          </div>
+
+          <div class="calc-group">
+            <label for="rental-days">Lease Duration (Days)</label>
+            <input type="number" id="rental-days" name="days" value="1" min="1" max="30">
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="breakdown-row">
+              <span>Base Commercial Rate</span>
+              <span id="calc-subtotal">₹11,999</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Goods & Services Tax (GST 18%)</span>
+              <span id="calc-gst">₹2,160</span>
+            </div>
+            <div class="breakdown-row total-row">
+              <span>Total Payable</span>
+              <span class="total-inr" id="calc-total">₹14,159</span>
+            </div>
+          </div>
+
+          <a class="btn-proceed-booking" href="booking-confirm.html?vehicle=prima&name=Tata%20Prima%204928.S&rate=11999&category=Commercial%20Truck">
+            Confirm Commercial Lease <span>→</span>
+          </a>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="index.html" class="back-top">BACK TO FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+  <script>
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(8, 0, 0, 0);
+    const dateInput = document.getElementById('pickup-date');
+    if (dateInput) dateInput.value = tomorrow.toISOString().slice(0, 16);
+  </script>
+</body>
+</html>

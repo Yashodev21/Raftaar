@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Raftaar's Complete Vehicle Rental Fleet - Cars, SUVs, Bikes, Scooters, Luxury Buses, and Commercial Trucks across India with transparent INR pricing.">
+  <title>Explore Fleet | Raftaar Vehicle Rentals</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="#lease">Commercial Leasing</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- EXPLORE HERO -->
+    <section class="section-wrap" style="padding-top: 55px; padding-bottom: 30px;">
+      <p class="eyebrow"><span class="eyebrow-line"></span> NATIONWIDE FLEET ACCESS</p>
+      <h1 style="font-family: 'Manrope', sans-serif; font-size: clamp(38px, 5vw, 60px); font-weight: 800; letter-spacing: -2px; margin: 0 0 16px;">
+        Explore all <span>vehicles.</span>
+      </h1>
+      <p style="color: var(--muted); font-size: 15px; max-width: 650px; line-height: 1.8;">
+        Browse our comprehensive multi-category fleet across India. From high-performance coupes and family SUVs 
+        to commuter scooters, 45-seater luxury coaches, and 40-ton commercial prime movers. All priced in clear INR (₹).
+      </p>
+    </section>
+
+    <!-- COMPLETE FLEET CATALOG WITH CATEGORY FILTERS -->
+    <section class="vehicle-section section-wrap" id="vehicles" style="padding-top: 20px;">
+      
+      <!-- Filter Bar -->
+      <div class="fleet-filter-bar">
+        <button class="filter-pill active" data-filter="all" type="button">All Rides (14)</button>
+        <button class="filter-pill" data-filter="cars" type="button">Cars & SUVs (5)</button>
+        <button class="filter-pill" data-filter="bikes" type="button">Bikes & Scooters (3)</button>
+        <button class="filter-pill" data-filter="buses" type="button">Buses & Vans (3)</button>
+        <button class="filter-pill" data-filter="trucks" type="button">Commercial Trucks (3)</button>
+      </div>
+
+      <!-- Vehicle Cards Grid -->
+      <div class="vehicle-grid">
+
+        <!-- 1. MERCEDES-AMG GT (car.html) -->
+        <article class="vehicle-card" data-category="cars">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">SPORTS · LUXURY</span>
+            <span class="vehicle-badge-avail">Available Now</span>
+            <img src="./assets/Car.png" alt="Mercedes-AMG GT Coupe" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">MERCEDES-BENZ</p>
+                <h3>AMG GT Coupe</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 2 Seats</span>
+              <span class="spec-chip">● 4.0L BiTurbo V8</span>
+              <span class="spec-chip">● 523 HP</span>
+              <span class="spec-chip">● Automatic</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹8,999 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="car.html">Details ↗</a>
+                <a class="btn-book" href="car.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. MARUTI SUZUKI SWIFT -->
+        <article class="vehicle-card" data-category="cars">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">CAR · HATCHBACK</span>
+            <span class="vehicle-badge-avail">Instant Pickup</span>
+            <img src="./assets/swift.png" alt="2024 Maruti Suzuki Swift" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">MARUTI SUZUKI</p>
+                <h3>2024 Suzuki Swift</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 5 Seats</span>
+              <span class="spec-chip">● Manual / AMT</span>
+              <span class="spec-chip">● 25 km/l</span>
+              <span class="spec-chip">● Petrol</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹1,499 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="swift.html">Details ↗</a>
+                <a class="btn-book" href="swift.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. HYUNDAI CRETA -->
+        <article class="vehicle-card" data-category="cars">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">CAR · COMPACT SUV</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/Creta.png" alt="2024 Hyundai Creta 1.5 Plus" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">HYUNDAI</p>
+                <h3>2024 Hyundai Creta 1.5</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 5 Seats</span>
+              <span class="spec-chip">● Panoramic Sunroof</span>
+              <span class="spec-chip">● Automatic</span>
+              <span class="spec-chip">● Level 2 ADAS</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹2,799 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="creta.html">Details ↗</a>
+                <a class="btn-book" href="creta.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. MAHINDRA THAR 4x4 -->
+        <article class="vehicle-card" data-category="cars">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">SUV · 4X4 OFF-ROAD</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/Thar.png" alt="Mahindra Thar 4x4 Adventure" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">MAHINDRA</p>
+                <h3>Thar 4x4 Hardtop</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 4 Seats</span>
+              <span class="spec-chip">● 4x4 Low Range</span>
+              <span class="spec-chip">● 2.2L mHawk Turbo</span>
+              <span class="spec-chip">● All-Terrain</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹3,499 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="thar.html">Details ↗</a>
+                <a class="btn-book" href="thar.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. TOYOTA FORTUNER 4x4 -->
+        <article class="vehicle-card" data-category="cars">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">SUV · 7-SEATER LUXURY</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/Fortuner.png" alt="Toyota Fortuner 4x4" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">TOYOTA</p>
+                <h3>Fortuner Legender 4x4</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 7 Seats</span>
+              <span class="spec-chip">● 2.8L Diesel · 500 Nm</span>
+              <span class="spec-chip">● 4x4 Automatic</span>
+              <span class="spec-chip">● Highway VIP</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹4,999 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="fortuner.html">Details ↗</a>
+                <a class="btn-book" href="fortuner.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. ROYAL ENFIELD CLASSIC 350 -->
+        <article class="vehicle-card" data-category="bikes">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">BIKE · CRUISER</span>
+            <span class="vehicle-badge-avail">Instant Pickup</span>
+            <img src="./assets/Classic 350.png" alt="Royal Enfield Classic 350" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">ROYAL ENFIELD</p>
+                <h3>Classic 350 Stealth</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 349 cc J-Series</span>
+              <span class="spec-chip">● Dual-Channel ABS</span>
+              <span class="spec-chip">● 2 Seats</span>
+              <span class="spec-chip">● 35 km/l</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹899 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="classic-350.html">Details ↗</a>
+                <a class="btn-book" href="classic-350.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. HONDA ACTIVA 6G -->
+        <article class="vehicle-card" data-category="bikes">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">SCOOTER · CITY COMMUTE</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/Activa.png" alt="Honda Activa 6G Scooter" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">HONDA</p>
+                <h3>Activa 6G Smart</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 110 cc eSP</span>
+              <span class="spec-chip">● Automatic CVT</span>
+              <span class="spec-chip">● Keyless Start</span>
+              <span class="spec-chip">● 55 km/l</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹499 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="activa.html">Details ↗</a>
+                <a class="btn-book" href="activa.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. YAMAHA R15 V4 SPORT -->
+        <article class="vehicle-card" data-category="bikes">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">BIKE · SUPERSPORT</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/R15.png" alt="Yamaha R15 V4 Racing" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">YAMAHA</p>
+                <h3>YZF-R15 V4 Racing</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 155 cc Liquid-Cooled</span>
+              <span class="spec-chip">● Quick Shifter</span>
+              <span class="spec-chip">● Traction Control</span>
+              <span class="spec-chip">● 140 km/h Top</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹1,199 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="yamaha-r15.html">Details ↗</a>
+                <a class="btn-book" href="yamaha-r15.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. VOLVO 9400 B11R BUS -->
+        <article class="vehicle-card" data-category="buses">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">BUS · LUXURY INTERCITY</span>
+            <span class="vehicle-badge-avail">Charter Ready</span>
+            <img src="./assets/Bus.png" alt="Volvo 9400 B11R Luxury Bus" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">VOLVO</p>
+                <h3>Volvo 9400 B11R Coach</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 45 Reclining Seats</span>
+              <span class="spec-chip">● AC Sleeper/Seater</span>
+              <span class="spec-chip">● Air Suspension</span>
+              <span class="spec-chip">● Chauffeur Included</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹14,999 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="volvo-bus.html">Details ↗</a>
+                <a class="btn-book" href="volvo-bus.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. FORCE TRAVELLER MINIBUS -->
+        <article class="vehicle-card" data-category="buses">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">MINI BUS · GROUP TOUR</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/Force.png" alt="Force Traveller Minibus" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">FORCE MOTORS</p>
+                <h3>Force Traveller 17</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 17 Luxury Seats</span>
+              <span class="spec-chip">● High Roof AC</span>
+              <span class="spec-chip">● FM2.6 CR Diesel</span>
+              <span class="spec-chip">● Driver Included</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹5,499 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="force-traveller.html">Details ↗</a>
+                <a class="btn-book" href="force-traveller.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. VOLKSWAGEN MULTIVAN -->
+        <article class="vehicle-card" data-category="buses">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">VAN · VIP EXECUTIVE</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/minibus.png" alt="Volkswagen Multivan Executive" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">VOLKSWAGEN</p>
+                <h3>Multivan Edition 30</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 7 Captain Seats</span>
+              <span class="spec-chip">● Conference Table</span>
+              <span class="spec-chip">● 2.0 BiTDI DSG</span>
+              <span class="spec-chip">● Privacy Glass</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹4,299 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="vw-multivan.html">Details ↗</a>
+                <a class="btn-book" href="vw-multivan.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. TATA PRIMA HEAVY TRUCK -->
+        <article class="vehicle-card" data-category="trucks">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">TRUCK · HEAVY HAULER</span>
+            <span class="vehicle-badge-avail">Commercial Lease</span>
+            <img src="./assets/Tata Prima Truck.png" alt="Tata Prima Heavy Truck" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">TATA MOTORS</p>
+                <h3>Tata Prima 4928.S</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 40 Ton Capacity</span>
+              <span class="spec-chip">● Cummins ISBe 280 HP</span>
+              <span class="spec-chip">● AC Sleeper Cabin</span>
+              <span class="spec-chip">● National Permit</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹11,999 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="tata-prima.html">Details ↗</a>
+                <a class="btn-book" href="tata-prima.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. TATA ACE MINI TRUCK -->
+        <article class="vehicle-card" data-category="trucks">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">MINI TRUCK · CARGO</span>
+            <span class="vehicle-badge-avail">Available</span>
+            <img src="./assets/Tata Ace.png" alt="Tata Ace Mini Truck" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">TATA MOTORS</p>
+                <h3>Tata Ace Gold Diesel</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 750 kg Payload</span>
+              <span class="spec-chip">● City Delivery Certified</span>
+              <span class="spec-chip">● 22 km/l Mileage</span>
+              <span class="spec-chip">● 2 Seats</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹1,899 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="tata-ace.html">Details ↗</a>
+                <a class="btn-book" href="tata-ace.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14. TATA 1618 HEAVY TIPPER DUMPER -->
+        <article class="vehicle-card" data-category="trucks">
+          <div class="vehicle-image">
+            <span class="vehicle-tag">TRUCK · HEAVY TIPPER</span>
+            <span class="vehicle-badge-avail">Commercial Lease</span>
+            <img src="./assets/truck tata.png" alt="Tata 1618 Heavy Tipper" loading="lazy">
+          </div>
+          <div class="vehicle-info">
+            <div class="vehicle-title-row">
+              <div>
+                <p class="vehicle-make">TATA MOTORS</p>
+                <h3>Tata 1618 Heavy Tipper</h3>
+              </div>
+            </div>
+            <div class="vehicle-specs-chips">
+              <span class="spec-chip">● 16 Ton GVW</span>
+              <span class="spec-chip">● Hydraulic Tipping Box</span>
+              <span class="spec-chip">● Heavy Mining/Build</span>
+              <span class="spec-chip">● 6-Wheeler</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-label">Rental rate</span>
+                <p class="vehicle-price">₹9,499 <span>/ day</span></p>
+              </div>
+              <div class="card-actions">
+                <a class="btn-details" href="tata-tipper.html">Details ↗</a>
+                <a class="btn-book" href="tata-tipper.html#book">Book in ₹</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- LONG-TERM LEASING SECTION -->
+    <section class="section-wrap" id="lease" style="padding: 70px 24px; border-top: 1px solid var(--line);">
+      <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 40px; align-items: center;">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> CORPORATE MOBILITY</p>
+          <h2 style="font-family: 'Manrope', sans-serif; font-size: clamp(30px, 3.8vw, 44px); font-weight: 800; letter-spacing: -1.5px; margin: 0 0 14px;">
+            Long-term leasing for<br><span>business & enterprise.</span>
+          </h2>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.8;">
+            Upgrade your company fleet without capital expenditure. Raftaar Corporate Fleet Leasing provides 
+            tax-deductible monthly subscriptions, full operational maintenance, insurance renewals, and 
+            guaranteed replacement vehicles with zero downtime.
+          </p>
+        </div>
+
+        <div style="background: var(--paper-soft); padding: 30px; border-radius: var(--radius); border: 1px solid var(--line);">
+          <h3 style="font-family: 'Manrope', sans-serif; font-size: 18px; margin: 0 0 16px;">Quick Leasing Enquiry</h3>
+          <form style="display: flex; flex-direction: column; gap: 12px;">
+            <input type="text" placeholder="Company / Individual Name" style="padding: 12px; border-radius: 8px; border: 1px solid var(--line); font-family: 'DM Sans', sans-serif; outline: none;" required>
+            <input type="email" placeholder="Business Email" style="padding: 12px; border-radius: 8px; border: 1px solid var(--line); font-family: 'DM Sans', sans-serif; outline: none;" required>
+            <select style="padding: 12px; border-radius: 8px; border: 1px solid var(--line); font-family: 'DM Sans', sans-serif; outline: none;">
+              <option>Vehicle Type: Cars & SUVs (1-10 Units)</option>
+              <option>Vehicle Type: Luxury Buses & Vans (Corporate Shuttles)</option>
+              <option>Vehicle Type: Commercial Haulers & Mini Trucks</option>
+            </select>
+            <button class="button button-primary" type="submit" style="margin-top: 6px;">
+              Request Custom Enterprise Quote <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="#vehicles" class="back-top">TOP OF FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+</body>
+</html>

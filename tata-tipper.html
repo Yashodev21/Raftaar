@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commercial lease of Tata 1618 Heavy Tipper with Raftaar. 16-ton mining and construction hydraulic dumper truck at ₹9,499/day in INR.">
+  <title>Tata 1618 Heavy Tipper Dumper Lease | Raftaar Fleet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main class="section-wrap details-page-wrap">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Commercial Trucks</a>
+      <span>/</span>
+      <span class="current">Tata 1618 Heavy Tipper</span>
+    </nav>
+
+    <div class="details-grid">
+      <section class="details-showcase">
+        <div class="details-main-image">
+          <span class="vehicle-tag">TRUCK · HEAVY HYDRAULIC TIPPER</span>
+          <img src="./assets/truck tata.png" alt="Tata 1618 Heavy Tipper Truck">
+        </div>
+
+        <div class="details-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-icon">🏗️</span>
+            <span class="spec-box-label">Gross Weight</span>
+            <span class="spec-box-val">16,200 kg GVW</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⚡</span>
+            <span class="spec-box-label">Engine</span>
+            <span class="spec-box-val">Turbotronn 5.0L</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⚙️</span>
+            <span class="spec-box-label">Tipping Body</span>
+            <span class="spec-box-val">8.5 Cu.M Box</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">🛡️</span>
+            <span class="spec-box-label">Chassis</span>
+            <span class="spec-box-val">Heavy-Duty Steel</span>
+          </div>
+        </div>
+
+        <div class="vehicle-desc-section">
+          <h3>Vehicle Overview</h3>
+          <p>
+            The benchmark of Indian infrastructure and mining projects. The Tata 1618 Tipper comes with an ultra-strong 
+            ladder-frame chassis, high-pressure hydraulic underbody tipping cylinder, heavy-duty rear planetary hub-reduction axles, 
+            and a durable all-steel driver cabin engineered to withstand aggregate quarrying and highway construction.
+          </p>
+
+          <h3>Commercial Lease Inclusions</h3>
+          <div class="inclusions-list">
+            <div class="inclusion-item">Hydraulic Inspection & Certifications Ready</div>
+            <div class="inclusion-item">On-Site Maintenance Engineer Support</div>
+            <div class="inclusion-item">Heavy Equipment Comprehensive Insurance</div>
+            <div class="inclusion-item">All-India Commercial Construction Permit</div>
+            <div class="inclusion-item">Telemetry & Working Hour Engine Tracker</div>
+            <div class="inclusion-item">Direct Fleet Account Manager Assigned</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="booking-sidebar-card" id="book">
+        <div class="pricing-header">
+          <div>
+            <span class="badge-tag-inr">LIVE PRICING · INR (₹)</span>
+            <div class="main-rate">₹9,499 <span>/ day</span></div>
+          </div>
+          <span class="vehicle-badge-avail">Commercial Lease</span>
+        </div>
+
+        <div class="rate-plans-grid">
+          <div class="rate-plan-option selected" data-plan-days="1">
+            <div class="plan-label">Daily Shift</div>
+            <div class="plan-price">₹9,499 / day</div>
+          </div>
+          <div class="rate-plan-option" data-plan-days="7">
+            <div class="plan-label">Weekly Project</div>
+            <div class="plan-price">₹59,999 / 7 days</div>
+          </div>
+        </div>
+
+        <form class="booking-calc-form" id="rental-calc-form" data-daily-rate="9499">
+          <div class="calc-group">
+            <label for="pickup-city">Project Base Location</label>
+            <select id="pickup-city" name="city">
+              <option value="delhi">Delhi NCR Infrastructure Hub</option>
+              <option value="mumbai">Mumbai Coastal Road Logistics Base</option>
+              <option value="bengaluru">Bengaluru Airport Expressway Base</option>
+              <option value="hyderabad">Hyderabad Outer Ring Road Base</option>
+              <option value="odisha">Odisha Mining Industrial Corridor</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label for="pickup-date">Deployment Date & Time</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+          </div>
+
+          <div class="calc-group">
+            <label for="rental-days">Deployment Duration (Days)</label>
+            <input type="number" id="rental-days" name="days" value="1" min="1" max="30">
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="breakdown-row">
+              <span>Base Commercial Equipment Rate</span>
+              <span id="calc-subtotal">₹9,499</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Goods & Services Tax (GST 18%)</span>
+              <span id="calc-gst">₹1,710</span>
+            </div>
+            <div class="breakdown-row total-row">
+              <span>Total Payable</span>
+              <span class="total-inr" id="calc-total">₹11,209</span>
+            </div>
+          </div>
+
+          <a class="btn-proceed-booking" href="booking-confirm.html?vehicle=tipper&name=Tata%201618%20Heavy%20Tipper&rate=9499&category=Tipper%20Truck">
+            Confirm Equipment Lease <span>→</span>
+          </a>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="index.html" class="back-top">BACK TO FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+  <script>
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(8, 0, 0, 0);
+    const dateInput = document.getElementById('pickup-date');
+    if (dateInput) dateInput.value = tomorrow.toISOString().slice(0, 16);
+  </script>
+</body>
+</html>
+

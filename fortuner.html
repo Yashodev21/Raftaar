@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rent Toyota Fortuner Legender 4x4 with Raftaar. Premium 7-seater luxury full-size SUV rental across India at ₹4,999/day in INR.">
+  <title>Toyota Fortuner Legender 4x4 Rental | Raftaar Fleet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main class="section-wrap details-page-wrap">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Cars & SUVs</a>
+      <span>/</span>
+      <span class="current">Toyota Fortuner Legender 4x4</span>
+    </nav>
+
+    <div class="details-grid">
+      <section class="details-showcase">
+        <div class="details-main-image">
+          <span class="vehicle-tag">SUV · 7-SEATER LUXURY VIP</span>
+          <img src="./assets/Fortuner.png" alt="Toyota Fortuner Legender 4x4">
+        </div>
+
+        <div class="details-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-icon">⚡</span>
+            <span class="spec-box-label">Engine & Torque</span>
+            <span class="spec-box-val">2.8L Diesel · 500 Nm</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">💺</span>
+            <span class="spec-box-label">Seating</span>
+            <span class="spec-box-val">7 Executive Leather</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⚙️</span>
+            <span class="spec-box-label">Transmission</span>
+            <span class="spec-box-val">6-Speed AT w/ Paddle</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⛰️</span>
+            <span class="spec-box-label">Drivetrain</span>
+            <span class="spec-box-val">4x4 High/Low Auto</span>
+          </div>
+        </div>
+
+        <div class="vehicle-desc-section">
+          <h3>Vehicle Overview</h3>
+          <p>
+            The undisputed king of Indian highways. The Toyota Fortuner Legender 4x4 provides commanding presence, 
+            legendary reliability, 500 Nm of pulling torque, ventilated seats, JBL 11-speaker sound system, 
+            and cavernous 7-passenger comfort for family vacations or executive convoys.
+          </p>
+
+          <h3>Rental Inclusions & Guarantee</h3>
+          <div class="inclusions-list">
+            <div class="inclusion-item">300 Free Kilometers per Day</div>
+            <div class="inclusion-item">Zero Security Deposit Option</div>
+            <div class="inclusion-item">Expressway Fastag Active</div>
+            <div class="inclusion-item">VIP Airport Pickup & Drop Available</div>
+            <div class="inclusion-item">24/7 Nationwide Toyota Support</div>
+            <div class="inclusion-item">Doorstep Valet Handover</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="booking-sidebar-card" id="book">
+        <div class="pricing-header">
+          <div>
+            <span class="badge-tag-inr">LIVE PRICING · INR (₹)</span>
+            <div class="main-rate">₹4,999 <span>/ day</span></div>
+          </div>
+          <span class="vehicle-badge-avail">Available</span>
+        </div>
+
+        <div class="rate-plans-grid">
+          <div class="rate-plan-option selected" data-plan-days="1">
+            <div class="plan-label">Daily VIP</div>
+            <div class="plan-price">₹4,999 / day</div>
+          </div>
+          <div class="rate-plan-option" data-plan-days="3">
+            <div class="plan-label">3-Day Tour</div>
+            <div class="plan-price">₹13,999 / 3 days</div>
+          </div>
+        </div>
+
+        <form class="booking-calc-form" id="rental-calc-form" data-daily-rate="4999">
+          <div class="calc-group">
+            <label for="pickup-city">Pickup City Hub</label>
+            <select id="pickup-city" name="city">
+              <option value="delhi">Delhi Airport T3 VIP Hub</option>
+              <option value="mumbai">Mumbai BKC Hub</option>
+              <option value="bengaluru">Bengaluru Airport Hub</option>
+              <option value="hyderabad">Hyderabad Gachibowli Hub</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label for="pickup-date">Pickup Date & Time</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+          </div>
+
+          <div class="calc-group">
+            <label for="rental-days">Rental Duration (Days)</label>
+            <input type="number" id="rental-days" name="days" value="1" min="1" max="30">
+          </div>
+
+          <div class="calc-group" style="margin-top: 6px;">
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+              <input type="checkbox" id="addon-insurance" checked>
+              <span>Zero-Liability Comprehensive Cover (+₹199/day)</span>
+            </label>
+          </div>
+
+          <div class="calc-group">
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+              <input type="checkbox" id="addon-delivery">
+              <span>Doorstep Valet Delivery (+₹399)</span>
+            </label>
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="breakdown-row">
+              <span>Base Rental Charge</span>
+              <span id="calc-subtotal">₹4,999</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Goods & Services Tax (GST 18%)</span>
+              <span id="calc-gst">₹900</span>
+            </div>
+            <div class="breakdown-row total-row">
+              <span>Total Payable</span>
+              <span class="total-inr" id="calc-total">₹5,899</span>
+            </div>
+          </div>
+
+          <a class="btn-proceed-booking" href="booking-confirm.html?vehicle=fortuner&name=Toyota%20Fortuner%20Legender&rate=4999&category=Luxury%20SUV">
+            Reserve & Confirm Booking <span>→</span>
+          </a>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="index.html" class="back-top">BACK TO FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+  <script>
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(10, 0, 0, 0);
+    const dateInput = document.getElementById('pickup-date');
+    if (dateInput) dateInput.value = tomorrow.toISOString().slice(0, 16);
+  </script>
+</body>
+</html>
+

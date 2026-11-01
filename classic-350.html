@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rent Royal Enfield Classic 350 with Raftaar. Iconic Indian cruiser motorcycle rental across India at ₹899/day with transparent INR pricing.">
+  <title>Royal Enfield Classic 350 Rental | Raftaar Fleet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main class="section-wrap details-page-wrap">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Bikes & Scooters</a>
+      <span>/</span>
+      <span class="current">Royal Enfield Classic 350</span>
+    </nav>
+
+    <div class="details-grid">
+      <section class="details-showcase">
+        <div class="details-main-image">
+          <span class="vehicle-tag">BIKE · CRUISER ICON</span>
+          <img src="./assets/Classic 350.png" alt="Royal Enfield Classic 350">
+        </div>
+
+        <div class="details-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-icon">🏍️</span>
+            <span class="spec-box-label">Engine</span>
+            <span class="spec-box-val">349 cc J-Series</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">🛑</span>
+            <span class="spec-box-label">Brakes</span>
+            <span class="spec-box-val">Dual-Channel ABS</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">💺</span>
+            <span class="spec-box-label">Seating</span>
+            <span class="spec-box-val">2 Touring Seats</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⛽</span>
+            <span class="spec-box-label">Fuel Range</span>
+            <span class="spec-box-val">35 km/l · 13L Tank</span>
+          </div>
+        </div>
+
+        <div class="vehicle-desc-section">
+          <h3>Vehicle Overview</h3>
+          <p>
+            The legendary thump reborn. Powered by the refined J-series counterbalanced engine, 
+            the Classic 350 eliminates unwanted vibration while preserving its timeless British heritage styling, 
+            heavy teardrop tank, retro analogue-digital console, and comfortable upright riding posture for long highway cruises.
+          </p>
+
+          <h3>Rental Inclusions & Guarantee</h3>
+          <div class="inclusions-list">
+            <div class="inclusion-item">2 ISI-Certified Helmets Provided</div>
+            <div class="inclusion-item">Zero Security Deposit Option</div>
+            <div class="inclusion-item">Mobile Phone Mount with Fast Charger</div>
+            <div class="inclusion-item">24/7 Roadside Puncture & Mechanical SOS</div>
+            <div class="inclusion-item">Comprehensive Two-Wheeler Insurance</div>
+            <div class="inclusion-item">Luggage Carrier Rack Fitted</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="booking-sidebar-card" id="book">
+        <div class="pricing-header">
+          <div>
+            <span class="badge-tag-inr">LIVE PRICING · INR (₹)</span>
+            <div class="main-rate">₹899 <span>/ day</span></div>
+          </div>
+          <span class="vehicle-badge-avail">Instant Pickup</span>
+        </div>
+
+        <div class="rate-plans-grid">
+          <div class="rate-plan-option selected" data-plan-days="1">
+            <div class="plan-label">Daily Cruise</div>
+            <div class="plan-price">₹899 / day</div>
+          </div>
+          <div class="rate-plan-option" data-plan-days="3">
+            <div class="plan-label">Weekend Ride</div>
+            <div class="plan-price">₹2,399 / 3 days</div>
+          </div>
+        </div>
+
+        <form class="booking-calc-form" id="rental-calc-form" data-daily-rate="899">
+          <div class="calc-group">
+            <label for="pickup-city">Pickup City Hub</label>
+            <select id="pickup-city" name="city">
+              <option value="delhi">Delhi Connaught Place Hub</option>
+              <option value="chandigarh">Chandigarh Sector 17 Hub</option>
+              <option value="bengaluru">Bengaluru Koramangala Hub</option>
+              <option value="goa">Goa Panaji Beach Hub</option>
+              <option value="mumbai">Mumbai Bandra West Hub</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label for="pickup-date">Pickup Date & Time</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+          </div>
+
+          <div class="calc-group">
+            <label for="rental-days">Rental Duration (Days)</label>
+            <input type="number" id="rental-days" name="days" value="1" min="1" max="30">
+          </div>
+
+          <div class="calc-group" style="margin-top: 6px;">
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+              <input type="checkbox" id="addon-insurance" checked>
+              <span>Zero-Liability Comprehensive Cover (+₹99/day)</span>
+            </label>
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="breakdown-row">
+              <span>Base Rental Charge</span>
+              <span id="calc-subtotal">₹899</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Goods & Services Tax (GST 18%)</span>
+              <span id="calc-gst">₹162</span>
+            </div>
+            <div class="breakdown-row total-row">
+              <span>Total Payable</span>
+              <span class="total-inr" id="calc-total">₹1,061</span>
+            </div>
+          </div>
+
+          <a class="btn-proceed-booking" href="booking-confirm.html?vehicle=classic350&name=Royal%20Enfield%20Classic%20350&rate=899&category=Cruiser%20Bike">
+            Reserve & Confirm Booking <span>→</span>
+          </a>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="index.html" class="back-top">BACK TO FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+  <script>
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(10, 0, 0, 0);
+    const dateInput = document.getElementById('pickup-date');
+    if (dateInput) dateInput.value = tomorrow.toISOString().slice(0, 16);
+  </script>
+</body>
+</html>
+

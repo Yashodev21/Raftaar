@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Charter Volvo 9400 B11R Luxury Intercity Coach with Raftaar. 45-seater multi-axle luxury coach hire across India at ₹14,999/day in INR.">
+  <title>Volvo 9400 B11R Luxury Bus Charter | Raftaar Fleet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main class="section-wrap details-page-wrap">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Buses & Vans</a>
+      <span>/</span>
+      <span class="current">Volvo 9400 B11R Luxury Coach</span>
+    </nav>
+
+    <div class="details-grid">
+      <section class="details-showcase">
+        <div class="details-main-image">
+          <span class="vehicle-tag">BUS · LUXURY MULTI-AXLE COACH</span>
+          <img src="./assets/Bus.png" alt="Volvo 9400 B11R Luxury Bus">
+        </div>
+
+        <div class="details-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-icon">💺</span>
+            <span class="spec-box-label">Seating</span>
+            <span class="spec-box-val">45 Reclining Plush</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⚡</span>
+            <span class="spec-box-label">Powertrain</span>
+            <span class="spec-box-val">Volvo D11K · 430 HP</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">❄️</span>
+            <span class="spec-box-label">Climate</span>
+            <span class="spec-box-val">Dual AC Aircon</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">👨‍✈️</span>
+            <span class="spec-box-label">Crew</span>
+            <span class="spec-box-val">Professional Chauffeur</span>
+          </div>
+        </div>
+
+        <div class="vehicle-desc-section">
+          <h3>Vehicle Overview</h3>
+          <p>
+            The pinnacle of group luxury travel in India. The 13.8m Volvo 9400 B11R multi-axle coach features 
+            electronically controlled air suspension, calf supports, personal USB charging ports, high-definition entertainment screens, 
+            whisper-quiet cabin insulation, and enormous underfloor luggage bays for corporate delegations, destination weddings, and tourist tours.
+          </p>
+
+          <h3>Charter Inclusions & Guarantee</h3>
+          <div class="inclusions-list">
+            <div class="inclusion-item">Uniformed Verified Commercial Captain</div>
+            <div class="inclusion-item">All-India All-State Tourism Permits</div>
+            <div class="inclusion-item">350 Free Kilometers per Day</div>
+            <div class="inclusion-item">Commercial Passenger Transit Insurance</div>
+            <div class="inclusion-item">Pre-loaded Toll Fastag</div>
+            <div class="inclusion-item">Sanitized Cabin & Emergency First-Aid Kit</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="booking-sidebar-card" id="book">
+        <div class="pricing-header">
+          <div>
+            <span class="badge-tag-inr">LIVE PRICING · INR (₹)</span>
+            <div class="main-rate">₹14,999 <span>/ day</span></div>
+          </div>
+          <span class="vehicle-badge-avail">Charter Ready</span>
+        </div>
+
+        <div class="rate-plans-grid">
+          <div class="rate-plan-option selected" data-plan-days="1">
+            <div class="plan-label">Daily Charter</div>
+            <div class="plan-price">₹14,999 / day</div>
+          </div>
+          <div class="rate-plan-option" data-plan-days="3">
+            <div class="plan-label">3-Day Tour</div>
+            <div class="plan-price">₹41,999 / 3 days</div>
+          </div>
+        </div>
+
+        <form class="booking-calc-form" id="rental-calc-form" data-daily-rate="14999">
+          <div class="calc-group">
+            <label for="pickup-city">Base Hub / Origin</label>
+            <select id="pickup-city" name="city">
+              <option value="delhi">Delhi NCR Interstate Hub</option>
+              <option value="mumbai">Mumbai Navi Mumbai Hub</option>
+              <option value="bengaluru">Bengaluru Majestic Base</option>
+              <option value="hyderabad">Hyderabad Secunderabad Base</option>
+              <option value="ahmedabad">Ahmedabad Hub</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label for="pickup-date">Departure Date & Time</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+          </div>
+
+          <div class="calc-group">
+            <label for="rental-days">Charter Duration (Days)</label>
+            <input type="number" id="rental-days" name="days" value="1" min="1" max="30">
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="breakdown-row">
+              <span>Base Charter (Driver Included)</span>
+              <span id="calc-subtotal">₹14,999</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Goods & Services Tax (GST 18%)</span>
+              <span id="calc-gst">₹2,700</span>
+            </div>
+            <div class="breakdown-row total-row">
+              <span>Total Payable</span>
+              <span class="total-inr" id="calc-total">₹17,699</span>
+            </div>
+          </div>
+
+          <a class="btn-proceed-booking" href="booking-confirm.html?vehicle=volvobus&name=Volvo%209400%20B11R%20Coach&rate=14999&category=Luxury%20Bus">
+            Reserve & Confirm Charter <span>→</span>
+          </a>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="index.html" class="back-top">BACK TO FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+  <script>
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(8, 0, 0, 0);
+    const dateInput = document.getElementById('pickup-date');
+    if (dateInput) dateInput.value = tomorrow.toISOString().slice(0, 16);
+  </script>
+</body>
+</html>
+

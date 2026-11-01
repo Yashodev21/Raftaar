@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rent Force Traveller 17 with Raftaar. 17-seater luxury AC minibus hire across India at ₹5,499/day in INR.">
+  <title>Force Traveller 17 Luxury Minibus Hire | Raftaar Fleet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="explore.html">Explore Fleet</a>
+      <a href="car.html">Featured Car</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="reg.html" class="register-btn">Register <span>↗</span></a>
+    </div>
+  </header>
+
+  <main class="section-wrap details-page-wrap">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Buses & Vans</a>
+      <span>/</span>
+      <span class="current">Force Traveller 17 Luxury</span>
+    </nav>
+
+    <div class="details-grid">
+      <section class="details-showcase">
+        <div class="details-main-image">
+          <span class="vehicle-tag">MINI BUS · 17-SEATER LUXURY</span>
+          <img src="./assets/Force.png" alt="Force Traveller Minibus">
+        </div>
+
+        <div class="details-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-icon">💺</span>
+            <span class="spec-box-label">Seating</span>
+            <span class="spec-box-val">17 Pushback Seats</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">⚡</span>
+            <span class="spec-box-label">Engine</span>
+            <span class="spec-box-val">FM2.6 CR · 115 HP</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">❄️</span>
+            <span class="spec-box-label">Aircon</span>
+            <span class="spec-box-val">Roof AC Individual</span>
+          </div>
+
+          <div class="spec-box">
+            <span class="spec-box-icon">🧳</span>
+            <span class="spec-box-label">Luggage</span>
+            <span class="spec-box-val">Rear Carrier + Boot</span>
+          </div>
+        </div>
+
+        <div class="vehicle-desc-section">
+          <h3>Vehicle Overview</h3>
+          <p>
+            India's favorite group excursion minibus. The Force Traveller 17 features high ceiling walk-through clearance, 
+            luxurious 2x1 pushback leather seats, individual AC louvers and reading lights, wide panoramic windows, 
+            and a rugged Mercedes-derived monocoque body for maximum stability on mountain ghats.
+          </p>
+
+          <h3>Charter Inclusions & Guarantee</h3>
+          <div class="inclusions-list">
+            <div class="inclusion-item">Verified Professional Chauffeur Included</div>
+            <div class="inclusion-item">All-India Tourism Permit Active</div>
+            <div class="inclusion-item">300 Free Kilometers per Day</div>
+            <div class="inclusion-item">Zero Security Deposit Option</div>
+            <div class="inclusion-item">24/7 Raftaar Interstate Support</div>
+            <div class="inclusion-item">Clean & Sanitized Cabin Seal</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="booking-sidebar-card" id="book">
+        <div class="pricing-header">
+          <div>
+            <span class="badge-tag-inr">LIVE PRICING · INR (₹)</span>
+            <div class="main-rate">₹5,499 <span>/ day</span></div>
+          </div>
+          <span class="vehicle-badge-avail">Available</span>
+        </div>
+
+        <div class="rate-plans-grid">
+          <div class="rate-plan-option selected" data-plan-days="1">
+            <div class="plan-label">Daily Tour</div>
+            <div class="plan-price">₹5,499 / day</div>
+          </div>
+          <div class="rate-plan-option" data-plan-days="3">
+            <div class="plan-label">Weekend Outstation</div>
+            <div class="plan-price">₹15,499 / 3 days</div>
+          </div>
+        </div>
+
+        <form class="booking-calc-form" id="rental-calc-form" data-daily-rate="5499">
+          <div class="calc-group">
+            <label for="pickup-city">Pickup City Hub</label>
+            <select id="pickup-city" name="city">
+              <option value="delhi">Delhi Airport & NCR Hub</option>
+              <option value="chandigarh">Chandigarh Shimla/Manali Hub</option>
+              <option value="mumbai">Mumbai BKC Hub</option>
+              <option value="pune">Pune Mahabaleshwar Base</option>
+              <option value="bengaluru">Bengaluru Ooty/Coorg Base</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label for="pickup-date">Pickup Date & Time</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+          </div>
+
+          <div class="calc-group">
+            <label for="rental-days">Charter Duration (Days)</label>
+            <input type="number" id="rental-days" name="days" value="1" min="1" max="30">
+          </div>
+
+          <div class="cost-breakdown">
+            <div class="breakdown-row">
+              <span>Base Charter (Driver Included)</span>
+              <span id="calc-subtotal">₹5,499</span>
+            </div>
+            <div class="breakdown-row">
+              <span>Goods & Services Tax (GST 18%)</span>
+              <span id="calc-gst">₹990</span>
+            </div>
+            <div class="breakdown-row total-row">
+              <span>Total Payable</span>
+              <span class="total-inr" id="calc-total">₹6,489</span>
+            </div>
+          </div>
+
+          <a class="btn-proceed-booking" href="booking-confirm.html?vehicle=traveller&name=Force%20Traveller%2017&rate=5499&category=Mini%20Bus">
+            Reserve & Confirm Charter <span>→</span>
+          </a>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark">R</span>
+      <span>Raftaar<span class="brand-dot">.</span></span>
+    </a>
+    <p>India's Premier All-Vehicle Rental Network.</p>
+    <a href="index.html" class="back-top">BACK TO FLEET ↑</a>
+    <small>© 2026 Raftaar Technologies India Pvt. Ltd. Pricing formatted in Indian Rupees (₹ INR).</small>
+  </footer>
+
+  <script>
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(9, 0, 0, 0);
+    const dateInput = document.getElementById('pickup-date');
+    if (dateInput) dateInput.value = tomorrow.toISOString().slice(0, 16);
+  </script>
+</body>
+</html>
