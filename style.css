@@ -229,7 +229,7 @@ button, a {
    ==================================================== */
 .hero-wrapper {
   position: relative;
-  background: radial-gradient(circle at 75% 30%, #63983a 0%, #377476 60%, #1c1c2b 100%);
+  background: #0f172a;
   color: #ffffff;
   overflow: hidden;
   border-bottom: 1px solid rgba(56, 189, 248, 0.15);
